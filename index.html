@@ -85,6 +85,7 @@ function handleInputChange(event){
       console.log(message);
     })
     .then(function(result){
+      console.log(result);
       var contentArea = document.getElementById('document-content');
       // Select lines of length 44 starting with P>
       console.log(result.lines.map(line => line.text.trim().length))
